@@ -1,0 +1,40 @@
+
+<p>
+  <figure>
+    <div class="quote">
+      <blockquote class="blockquote">
+        <%= "#{params[:question].capitalize}" %>
+      </blockquote>
+      <figcaption class="blockquote-footer">
+        You
+      </figcaption>
+    </div>
+  </figure>
+
+</p>
+<p>
+<figure>
+  <div class="quote bg-warning bg-opacity-25">
+    <blockquote class="blockquote">
+      <% if params[:question].include?("I am going to work")%>
+        <%= "Great!"%>
+      <% elsif params[:question].include?("?") %>
+        <%= "Silly question, get dressed and go to work!"%>
+      <% else %>
+        <%= "I don't care, get dressed and go to work!"%>
+      <% end %>
+    </blockquote>
+      <figcaption class="blockquote-footer">
+        Coach
+      </figcaption>
+    </div>
+  </figure>
+</p>
+
+<p > <%= link_to "Ask a new question", ask_path, class: "btn btn-primary" %> </p>
+
+
+<%# <figure>
+    <p>A well-known quote, contained in a blockquote element.</p>
+    Someone famous in <cite title="Source Title">Source Title</cite>
+</figure> %>

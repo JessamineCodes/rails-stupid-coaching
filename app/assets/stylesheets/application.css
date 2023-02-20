@@ -13,3 +13,20 @@
  *= require_tree .
  *= require_self
  */
+ h1 {
+  padding-bottom: 25px;
+ }
+
+.container {
+  margin: 25px auto;
+}
+
+/* figure {
+  border-left: rgb(216, 214, 214) solid 2px;;
+} */
+
+.quote {
+  padding: 25px;
+  margin-top: 1rem;
+  border-left: rgb(216, 214, 214) solid 2px;
+}
